@@ -111,7 +111,7 @@ def TransferDataWithClinical(input_path,omics_data_file,module_file,output_path)
     pathway_output.to_csv(output_path+'pathway_module_input.csv')
     return train_output,test_output,val_output
 
-input_path='/home/dongqiongye/DeepMusics-main_2/DeepMusics-main/LGG/'
+input_path='./Data/'
 module_file='pathway_module.csv'
 
 omics_data_file=['rna']################# single omic data input ####################

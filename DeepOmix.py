@@ -1,9 +1,9 @@
 import torch
 import torch.nn as nn
 
-class DeepMusicsNet(nn.Module):
+class DeepOmixNet(nn.Module):
 	def __init__(self, In_Nodes, Pathway_Nodes, Hidden_Nodes,Out_Nodes, Pathway_Mask):
-		super(DeepMusicsNet, self).__init__()
+		super(DeepOmixNet, self).__init__()
 		self.tanh = nn.Tanh()
 		self.pathway_mask = Pathway_Mask
 		self.sc1 = nn.Linear(In_Nodes, Pathway_Nodes)

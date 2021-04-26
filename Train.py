@@ -1,4 +1,4 @@
-from DeepMusics import DeepMusicsNet
+from DeepOmix import DeepOmixNet
 from SubNetwork import dropout_mask, s_mask
 from Survival import R_set, neg_par_log_likelihood, c_index
 import torch
@@ -10,12 +10,12 @@ import pandas as pd
 import math
 dtype = torch.FloatTensor
 
-def trainDeepMusicsNet_without(train_x, train_ytime, train_yevent, \
+def trainDeepOmixNet_without(train_x, train_ytime, train_yevent, \
 			eval_x, eval_ytime, eval_yevent, pathway_mask, \
 			In_Nodes, Pathway_Nodes, Hidden_Nodes, Out_Nodes, \
 			Learning_Rate, L2, Num_Epochs, Dropout_Rate):
 	print('there are ',Num_Epochs,'epochs in the training process!!')
-	net = DeepMusicsNet(In_Nodes, Pathway_Nodes, Hidden_Nodes, Out_Nodes, pathway_mask)
+	net = DeepOmixNet(In_Nodes, Pathway_Nodes, Hidden_Nodes, Out_Nodes, pathway_mask)
 	###if gpu is being used
 	if torch.cuda.is_available():
 		net.cuda()
