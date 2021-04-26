@@ -1,4 +1,4 @@
-# DeepOmix: A Multi-Omics Scalable and Interpretable Deep Learning Framework and Application in Cancer Survival Prediction
+# DeepOmix: A Multi-Omics Scalable and Interpretable Deep Learning Framework and Application in Cancer Survival Analysis
 
   ![image](https://github.com/CancerProfiling/DeepOmix/blob/main/Figures/DeepOmix.png)
   
