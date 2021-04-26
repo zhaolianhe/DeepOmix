@@ -20,7 +20,7 @@ Out_Nodes = 30
 
 Initial_Learning_Rate = [0.00001, 0.000075]
 L2_Lambda = [0.01, 0.005, 0.001]
-num_epochs = 500 
+num_epochs = 5000
 Num_EPOCHS = 20000
 Dropout_Rate = [0.7, 0.5]
 path='./Data/Multiple/'
